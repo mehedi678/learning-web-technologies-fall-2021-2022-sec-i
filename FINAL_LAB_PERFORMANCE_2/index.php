@@ -1,9 +1,10 @@
 <?php
 
+?>
 <html>
     <head>
         <title>Ajax Calculator</title>
-      
+        
         <style>
             .but{
                 width: 25px;
@@ -37,7 +38,7 @@
         </style>
         <script>
             $(document).ready(function(){
-                //general
+                
                 $('input[type=button]').click(function(){
                     var num = $(this).val();
                     var old = $('#display').html();
@@ -50,7 +51,7 @@
                         $('#display').html(old);
                         return;
                     }
-                    
+                  
                     $.ajax({
                             url:'ajax.php',
                             type: "POST",
@@ -62,7 +63,7 @@
                             $('#display').html('Oops! An error occured');}
                            );
                 });
-                
+                //equal button click
                 $('#eql').click(function(){
                     var num = $('#display').html();
                     var old = $('#display').html();
@@ -118,11 +119,6 @@ Simple Calculator Using AJAX/PHP
     <tr>
         <td colspan="5"><input id="eql" value="=" type="button" class="eql"></td>
     </tr>
-</table>
-<p><b>Current Features Not Present</b></p>
-<ol>
-<li>Recognise decimal numbers and stop adding extra dots</li>
-<li>Recognise a negative number and and use it in a calculation</li>
-</ol>
-    </body>
+
+</body>
 </html>
