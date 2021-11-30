@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<title>JQuerry</title>
+</head>
+<body>
+<form method="post" action="">
+	<table border="1">
+		<tr>
+			<td colspan ="2">
+				<h2 align="center"> Registration </h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Name
+			</td>
+			<td>
+				<input type="text" id="name" name="name" value="">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email
+			</td>
+			<td>
+				<input type="email" id="email" name="email" value="">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Gender:
+			</td>
+			<td>
+				<input type="radio" id="gender" name="gender" value="male">Male
+				<input type="radio" id="gender" name="gender" value="female">Female
+				<input type="radio" id="gender" name="gender" value="other">Other
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Date
+			</td>
+			<td>
+				<table>
+					<tr>
+						<td><input type="text" id="dd" name="dd">/</td>
+						<td><input type="text" id="mm" name="mm">/</td>
+						<td><input type="text" id="yyy" name="yyy"> (dd/mm/yyy)</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>Blood Group</td>
+			<td><select id="bg" name="bg">
+				<option value="">(select a option)</option>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+
+			</select></td>
+		</tr>
+		<tr>
+			<td>
+				Degree
+			</td>
+			<td>
+				<input id="ssc" type="checkbox" id="SSC" name="SSC">SSC
+				<input id="hsc" type="checkbox" id="HSC" name="HSC">HSC
+				<input id="bsc" type="checkbox" id="BSc" name="BSc">BSc.
+				<input id="msc" type="checkbox" id="MSc" name="MSc">MSc.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Photo
+			</td>
+			<td>
+				<input type="Photo" id="email" name="photo" value="">
+				<div class="drag-area">
+    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+    <header>Drag & Drop to Upload File</header>
+    <span>OR</span>
+    <button>Browse File</button>
+    <input type="file" hidden>
+  </div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" name="submit" value="Submit">
+			<input type="reset" name="reset" value="Reset"></td>
+		</tr>
+	</table>
+</form>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
