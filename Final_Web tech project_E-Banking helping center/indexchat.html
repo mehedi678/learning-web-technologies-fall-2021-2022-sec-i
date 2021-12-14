@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <li>
+        
+        <option value="Accountrelatedproblem"> Account related problem ?</option>
+        <br>
+        <br>
+        <option value="Branch Info"> Branch Info ?</option>
+        <br>
+        <br>
+        <option value="Transaction problem"> Transaction problem ?</option>
+        <br>
+        <br>
+        <option value="Security issues"> Security issues ?</option>
+        <br>
+        <br>
+        <option value="Money Transfer issue "> Money Transfer issue ?</option>
+        <br>
+        <br>
+        <option value="Others"> Others ?</option>
+        <br>
+        <br>
+
+        </li>
+
+      </select>
+
+       
+
+      <div data-conv-fork="category">
+        <div data-conv-case="account related issues">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+        </div>
+        <div data-conv-case="Loan help">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+        </div>
+        <div data-conv-case="Branch info">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+        </div>
+        <div data-conv-case="Branch" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your Branch name"> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <input type="text" name="Account info" data-conv-question="Enter your Account number">
+
+
+      <input type="text" name="Response" data-conv-question="one of our represenetory will contact you shortly...">
+
+
+      <select data-conv-question="Please Conform">
+      <option value="Yes">Conform</option>
+
+
+
+      <p> one of our represenetory will contact you shortly... </p>
+
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>E-Banking helpdesk support</h1>
+					<p>Solve the issue</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+
+<div class="about-section" id="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5 text-justify">
+				<h2 class="bdr-btm">More About Helpdesk</h2>
+				<p>This is an complete helpdesk messasing chat management system. You can easily contact to one our represenetory. At first you need to select an option based on your issues and then you need to fill-up the requirements. </p>
+				<a href="#contact" class="btn1">Contact Us</a>	
+			</div>
+			
+			
+
+<div class="contact-section d-md-flex" id="contact">
+  <div class="col-md-6 col-12 contact_section_left">
+    <div class="contact_box">
+      <i class="fa fa-phone"></i>
+      <h3>TelePhone</h3>
+      <p>9902367892</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-envelope"></i>
+      <h3>Email</h3>
+      <p>support@ebank.com</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-map-marker"></i>
+      <h3>Address</h3>
+      <p> To Know More About Please Call </p>
+
+Corporate Office 
+<br>
+
+☎️ +88 01819406012
+<br>
+
+☎️ +88 01819216034
+<br>
+☎️ +88 01730018458
+<br>
+☎️ +88 01730018547
+<br>
+<br>
+
+Banani Office
+<br>
+☎️ +88 01730018459
+<br>
+☎️ +88 01730018478 
+<br>
+<br>
+
+
+Uttara Office
+<br>
+☎️ +88 01830018459
+<br>
+☎️ +88 01830018478 
+<br>
+<br>
+
+
+Basundhora Office
+<br>
+☎️ +88 01823112459
+    
+  </div>
+  <div class="col-md-6 col-12 contact_section_right d-flex align-items-center">
+    <div class="contact_box">
+      <h2 class="bdr-btm">Get In Touch</h2>
+      <form>
+        <div>
+          <input type="text" name="" placeholder="Name">
+          <input type="text" name="" placeholder="Email">
+          <input type="text" name="" placeholder="Subject">
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" class="inline-block" name="" value="Send Message">
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
